@@ -1,0 +1,28 @@
+{
+  "id": "epistle_jose",
+  "sender": {
+    "sender_name": "Gregory the Great",
+    "sender_place": "Rome"
+  },
+  "recipient": {
+    "recipient_name": "Jose Carlos, abbot of Hamburg",
+    "recipient_place": "Hamburg"
+  },
+  "entities_secondary": {
+    "people_secondary": [
+      {
+        "name": "Anton",
+        "role": "Professor"
+      }
+    ]
+  },
+  "date": {
+    "year_start": 590,
+    "year_end": 590,
+    "approximate": false
+  },
+  "semantics": {
+    "intent": "conciliation"
+  },
+  "summary": "Lorem ipsum dolor sit amet"
+}

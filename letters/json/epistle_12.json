@@ -5,8 +5,8 @@
     "sender_place": "Rome"
   },
   "recipient": {
-    "recipient_name": "John, Bishop of Urbs Vetus (Orvieto)",
-    "recipient_place": "Urbs Vetus (Orvieto)"
+    "recipient_name": "John, Bishop of Orvieto",
+    "recipient_place": "Orvieto"
   },
   "entities_secondary": {
     "people_secondary": [
@@ -15,9 +15,7 @@
         "role": "Abbot of the Monastery of St. George"
       }
     ],
-    "places_secondary": [
-      "Monastery of St. George"
-    ]
+    "places_secondary": ["Monastery of St. George"]
   },
   "date": {
     "year_start": 593,
