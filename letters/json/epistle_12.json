@@ -1,0 +1,31 @@
+{
+  "id": "epistle_12",
+  "sender": {
+    "sender_name": "Gregory the Great",
+    "sender_place": "Rome"
+  },
+  "recipient": {
+    "recipient_name": "John, Bishop of Urbs Vetus (Orvieto)",
+    "recipient_place": "Urbs Vetus (Orvieto)"
+  },
+  "entities_secondary": {
+    "people_secondary": [
+      {
+        "name": "Agapitus",
+        "role": "Abbot of the Monastery of St. George"
+      }
+    ],
+    "places_secondary": [
+      "Monastery of St. George"
+    ]
+  },
+  "date": {
+    "year_start": 593,
+    "year_end": 594,
+    "approximate": true
+  },
+  "semantics": {
+    "intent": "admonition"
+  },
+  "summary": "Gregory reports that Abbot Agapitus has complained that Bishop John has imposed severe restrictions on his monastery, including prohibiting Masses and burials. Gregory urges John to stop this harsh treatment and to allow normal liturgical and funerary functions, warning that otherwise Agapitus will be compelled to complain again."
+}
