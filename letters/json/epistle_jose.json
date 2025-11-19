@@ -11,18 +11,16 @@
   "entities_secondary": {
     "people_secondary": [
       {
-        "name": "Anton",
-        "role": "Professor"
+        "name": "Anton Alvar, Professor"
       }
     ]
   },
   "date": {
-    "year_start": 590,
-    "year_end": 590,
+    "year": 590,
     "approximate": false
   },
   "semantics": {
     "intent": "conciliation"
   },
-  "summary": "Lorem ipsum dolor sit amet"
+  "summary": "Gregory talks about the role of Jose Carlos in Hamburg"
 }

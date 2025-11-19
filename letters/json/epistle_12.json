@@ -11,19 +11,17 @@
   "entities_secondary": {
     "people_secondary": [
       {
-        "name": "Agapitus",
-        "role": "Abbot of the Monastery of St. George"
+        "name": "Agapitus, Abbot of the Monastery of St. George"
       }
     ],
     "places_secondary": ["Monastery of St. George"]
   },
   "date": {
-    "year_start": 593,
-    "year_end": 594,
+    "year": 593,
     "approximate": true
   },
   "semantics": {
     "intent": "admonition"
   },
-  "summary": "Gregory reports that Abbot Agapitus has complained that Bishop John has imposed severe restrictions on his monastery, including prohibiting Masses and burials. Gregory urges John to stop this harsh treatment and to allow normal liturgical and funerary functions, warning that otherwise Agapitus will be compelled to complain again."
+  "summary": "Gregory reports that Abbot Agapitus has complained that Bishop John has imposed severe restrictions on his monastery, including prohibiting Masses and burials."
 }
