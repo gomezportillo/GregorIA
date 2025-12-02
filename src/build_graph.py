@@ -1,10 +1,10 @@
-import os
 import json
-
-import networkx as nx
-import matplotlib.pyplot as plt
-from pyvis.network import Network
+import os
 from glob import glob
+
+import matplotlib.pyplot as plt
+import networkx as nx
+from pyvis.network import Network
 
 INPUT_DIR = "./letters/json/"
 OUTPUT_IMG = "./out/img/graph.png"
@@ -81,7 +81,7 @@ def save_graph_image(G, output_img):
     labels = {n: n.replace(", ", "\n") for n in G.nodes()}
     nx.draw_networkx_labels(G, pos, labels=labels, font_size=10)
 
-    plt.axis('off')
+    plt.axis("off")
     plt.tight_layout()
     plt.savefig(output_img)
     plt.close()
@@ -105,21 +105,15 @@ def save_graph_html(G, output_html):
         net.add_node(u, label=u)
         net.add_node(v, label=v)
 
-        reference = "Reference\n" if data.get('reference') else ""
-        intent = f"Intent: {data.get('intent')}\n" if data.get('intent') else ""
-        year = f"Year: {data.get('year')}\n" if data.get('year') else ""
-        summary = f"Summary: {data.get('summary')}" if not reference and data.get('summary') else ""
+        reference = "Reference\n" if data.get("reference") else ""
+        intent = f"Intent: {data.get('intent')}\n" if data.get("intent") else ""
+        year = f"Year: {data.get('year')}\n" if data.get("year") else ""
+        summary = f"Summary: {data.get('summary')}" if not reference and data.get("summary") else ""
 
-        net.add_edge(
-            u,
-            v,
-            color=edge_color,
-            dashes=dashes,
-            title=f"{reference} {intent} {year} {summary}"
-        )
+        net.add_edge(u, v, color=edge_color, dashes=dashes, title=f"{reference} {intent} {year} {summary}")
 
     net.force_atlas_2based()
-    net.show_buttons(filter_=['physics'])
+    # net.show_buttons(filter_=['physics'])
     net.write_html(output_html)
 
     print(f"✔ Grafo HTML interactivo guardado en {output_html}")

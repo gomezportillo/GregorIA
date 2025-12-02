@@ -3,6 +3,7 @@ VENV_DIR := gregoria-env
 PYTHON := $(VENV_DIR)/bin/python
 PIP := $(VENV_DIR)/bin/pip
 
+# Paths
 JSON_DIR := letters/json
 PDF_DIR := letters/raw
 OUTPUT_DIR := out/graph
@@ -10,7 +11,7 @@ OUTPUT_DIR := out/graph
 # Dependencies
 REQS := networkx matplotlib pyvis
 
-.PHONY: all setup install run clean
+.PHONY: all setup install run clean parse
 
 all: setup run
 
@@ -28,9 +29,13 @@ install: $(VENV_DIR)/bin/activate
 
 setup: install
 
-# Ejecutar el script
+# Ejecutar el script principal
 run:
 	$(PYTHON) src/build_graph.py
+
+# Parsear las epístolas
+parse:
+	$(PYTHON) src/parse_epistolarum.py
 
 # Limpiar archivos generados
 clean:
