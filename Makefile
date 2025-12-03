@@ -3,9 +3,8 @@ VENV_DIR := gregoria-env
 PYTHON := $(VENV_DIR)/bin/python
 PIP := $(VENV_DIR)/bin/pip
 
-# Paths
-JSON_DIR := letters/json
-PDF_DIR := letters/raw
+# Directories
+TXT_DIR := letters/txt
 OUTPUT_DIR := out/graph
 
 # Dependencies
@@ -40,4 +39,4 @@ parse:
 # Limpiar archivos generados
 clean:
 	rm -rf $(VENV_DIR)
-	rm -rf $(OUTPUT_DIR)
+	rm -rf $(OUTPUT_DIR) $(TXT_DIR)

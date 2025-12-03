@@ -1,5 +1,6 @@
 # Personal ignores
-letters/epistolarum/txt/
+letters/txt/
+out/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
